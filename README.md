@@ -65,7 +65,7 @@ How to fix it to output numbers from 0 to 9?
 
 Ther're several ways to resolve code above.
 
-1) By passing variable into wrapper-function
+1) By creating a [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression) (Immediately Invoked Function Expression):
 ```
 for (var i=0; i < 10; i++){
     setTimeout((function(param){
