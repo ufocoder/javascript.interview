@@ -43,6 +43,9 @@ function outerFunction() {
 outerFunction();
 ```
 
+**Answer**
+It will be output `true`
+
 ### Question 3: Resolving example of problem code
 
 What will output these example? 
