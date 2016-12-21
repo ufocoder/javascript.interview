@@ -35,7 +35,11 @@ console.log(otherObject.getProp());
 
 **Answer**
 
-Console will output `Base value`
+Console will output 
+```
+Other value
+Base value
+```
 
 ## Closure in Javascript
 
