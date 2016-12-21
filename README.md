@@ -1,15 +1,41 @@
 Javascript Interview
 ====================
 
-This documents contains the most actual and important questions for Senior Javascript developer position. 
+This documents contains the most actual and important questions for Javascript developer position. 
 It will helps you to compose question list for your own interview or prepare to inverview.
 
 Table of contents:
 
+* [Inheritance in Javascript](#inheritance-in-javascript):
+   * [What will output the following code](#question-1-what-will-output-the-following-code-and-why)
 * [Closure in Javascript](#closure-in-javascript):
     * [What is Closure in Javascript?](#question-1-what-is-closure-in-javascript)
     * [What will output the following code](#question-2-what-will-output-the-following-code-and-why)
     * [Resolving example of problem code](#question-3-resolving-example-of-problem-code)
+
+## Inheritance in Javascript
+
+### Question 1: What will output the following code and why:
+```
+var baseObject = {
+  prop: "Base value",
+  getProp: function() {
+    return this.prop;
+  }
+};
+
+var otherObject = Object.create(baseObject);
+
+otherObject.prop = "Other value";
+
+console.log(otherObject.getProp());
+delete otherObject.prop;
+console.log(otherObject.getProp()); 
+```
+
+**Answer**
+
+Console will output `Base value`
 
 ## Closure in Javascript
 
