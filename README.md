@@ -12,7 +12,7 @@ Table of contents:
     * [What is Closure in Javascript?](#question-1-what-is-closure-in-javascript)
     * [What will output the following code](#question-2-what-will-output-the-following-code-and-why)
     * [Resolving example of problem code](#question-3-resolving-example-of-problem-code)
-    * [Write nextID function](#question-3-resolving-example-of-problem-code)
+    * [Write nextID function](#question-4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
 
 ## Inheritance in Javascript
 
