@@ -12,6 +12,7 @@ Table of contents:
     * [What is Closure in Javascript?](#question-1-what-is-closure-in-javascript)
     * [What will output the following code](#question-2-what-will-output-the-following-code-and-why)
     * [Resolving example of problem code](#question-3-resolving-example-of-problem-code)
+    * [Write nextID function](#question-3-resolving-example-of-problem-code)
 
 ## Inheritance in Javascript
 
@@ -118,6 +119,26 @@ for (let i=0; i < 10; i++){
 for (var i=0; i < 10; i++){
     setTimeout(console.log.bind(console, i), 1000);
 }
+```
+
+### Question 4: Write `nextID` function that will generate ID incrementally after each calling
+There's an exmpale of function output:
+```
+nextID(); // output: 1
+nextID(); // output: 2
+nextID(); // output: 3
+```
+
+**Answer**
+
+We should use closure in [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression):
+```
+var nextID = (function() {
+   var id = 0;
+   return function() {
+   		console.log(++id);
+   }
+})();
 ```
 
 # Contributing
