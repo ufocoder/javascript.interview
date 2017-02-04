@@ -146,6 +146,43 @@ var nextID = (function() {
 })();
 ```
 
+
+## Binding context
+
+### Question 1: Write `sum` function
+
+This function must meet conditions:
+
+```
+typeof sum(1) === 'function'
+typeof sum(1)(2) === 'function'
+typeof sum(1)(2)() === 'number'
+
+sum(1)() === 1
+sum(1,2)(3)() == 6
+sum(1,2)(3,4)() === 10
+```
+
+**Answer**
+
+```
+function sum (fn) {
+  var sumArguments = Array.prototype.slice.call(arguments);
+    
+  return function sumInner() {
+      if (arguments.length) {
+          sumArguments = sumArguments.concat(Array.prototype.slice.call(arguments));
+
+          return sumInner;
+      } else {
+          return sumArguments.reduce(function(total, arg) {
+            return total + arg;
+          }, 0);
+      }
+  };
+}
+```
+
 # Contributing
 
 I would be thankful for your [issues](https://github.com/ufocoder/javascript.interview/issues) and [pull requests](https://github.com/ufocoder/javascript.interview/pulls)
