@@ -68,6 +68,7 @@ function outerFunction() {
       console.log(flag);
     }
 
+    console.log(flag);
     innerFunction();
 }
 
@@ -76,7 +77,11 @@ outerFunction();
 
 **Answer**
 
-Console will output `true`
+Console will output the followings:
+```
+true
+undefined
+```
 
 ### Question 3: Resolving example of problem code
 
