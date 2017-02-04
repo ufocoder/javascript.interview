@@ -150,7 +150,7 @@ var nextID = (function() {
 ```
 
 
-## Binding context
+## Bind, apply and call function methods
 
 ### Question 1: Write `sum` function
 
