@@ -16,8 +16,9 @@ Table of contents:
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
     * [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in Javascript](#hoisting-in-javascript):
-   * [What will output the following code #1](#question-h1-what-will-output-the-following-code-and-why)
+   * [What is a hoisting in Javascript](#question-h1-explain-what-is-hoisting-in-Javascript)
    * [What will output the following code #2](#question-h2-what-will-output-the-following-code-and-why)
+   * [What will output the following code #2](#question-h3-what-will-output-the-following-code-and-why)
 
 ## Inheritance in Javascript
 
