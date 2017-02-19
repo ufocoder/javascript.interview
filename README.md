@@ -7,7 +7,7 @@ It will helps you to compose question list for your own interview or prepare to 
 Table of contents:
 
 * [Inheritance in Javascript](#inheritance-in-javascript):
-   * [Write `Object.create` polyfill](#question-i1-write-object-create-polyfill)
+   * [Write `Object.create` polyfill](#question-i1-write-objectcreate-polyfill)
    * [What is functional inherence pattern? How to create protected methods and private propreties?](#question-i2-what-is-functional-inherence-pattern-how-to-create-protected-methods-and-private-propreties)
    * [What will output the following code](#question-i3-what-will-output-the-following-code-and-why)
 * [Closure in Javascript](#closure-in-javascript):
