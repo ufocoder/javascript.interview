@@ -7,7 +7,9 @@ It will helps you to compose question list for your own interview or prepare to 
 Table of contents:
 
 * [Inheritance in Javascript](#inheritance-in-javascript):
-   * [What will output the following code](#question-i1-what-will-output-the-following-code-and-why)
+   * [Write `Object.create` polyfill](#question-i1-write-object-create-polyfill)
+   * [What is functional inherence pattern? How to create protected methods and private propreties?](#question-what-is-functional-inherence-pattern-how-to-create-protected-methods-and-private-propreties)
+   * [What will output the following code](#question-i3-what-will-output-the-following-code-and-why)
 * [Closure in Javascript](#closure-in-javascript):
     * [What is Closure in Javascript?](#question-c1-what-is-closure-in-javascript)
     * [What will output the following code](#question-c2-what-will-output-the-following-code-and-why)
@@ -17,12 +19,16 @@ Table of contents:
     * [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in Javascript](#hoisting-in-javascript):
    * [What is a hoisting in Javascript](#question-h1-explain-what-is-hoisting-in-Javascript)
-   * [What will output the following code #2](#question-h2-what-will-output-the-following-code-and-why)
-   * [What will output the following code #2](#question-h3-what-will-output-the-following-code-and-why)
+   * [What will output the following code](#question-h2-what-will-output-the-following-code-and-why)
+   * [What will output the following code](#question-h3-what-will-output-the-following-code-and-why)
 
 ## Inheritance in Javascript
 
-### Question i1: What will output the following code and why:
+### Question i1: Write `Object.create` polyfill
+
+### Question i2: What is functional inherence pattern? How to create protected methods and private propreties?
+
+### Question i3: What will output the following code and why:
 ```
 var baseObject = {
   prop: "Base value",
