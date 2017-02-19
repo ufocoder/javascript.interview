@@ -7,21 +7,21 @@ It will helps you to compose question list for your own interview or prepare to 
 Table of contents:
 
 * [Inheritance in Javascript](#inheritance-in-javascript):
-   * [What will output the following code](#question-1-what-will-output-the-following-code-and-why)
+   * [What will output the following code](#question-i1-what-will-output-the-following-code-and-why)
 * [Closure in Javascript](#closure-in-javascript):
-    * [What is Closure in Javascript?](#question-1-what-is-closure-in-javascript)
-    * [What will output the following code](#question-2-what-will-output-the-following-code-and-why)
-    * [Resolving example of problem code](#question-3-resolving-example-of-problem-code)
-    * [Write `nextID` function](#question-4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
+    * [What is Closure in Javascript?](#question-c1-what-is-closure-in-javascript)
+    * [What will output the following code](#question-c2-what-will-output-the-following-code-and-why)
+    * [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
+    * [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
-    * [Write `sum` function](#question-1-write-sum-function)
+    * [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in Javascript](#hoisting-in-javascript):
-   * [What will output the following code #1](#question-2-what-will-output-the-following-code-and-why)
-   * [What will output the following code #2](#question-2-what-will-output-the-following-code-and-why)
+   * [What will output the following code #1](#question-h1-what-will-output-the-following-code-and-why)
+   * [What will output the following code #2](#question-h2-what-will-output-the-following-code-and-why)
 
 ## Inheritance in Javascript
 
-### Question 1: What will output the following code and why:
+### Question i1: What will output the following code and why:
 ```
 var baseObject = {
   prop: "Base value",
@@ -49,7 +49,7 @@ Base value
 
 ## Closure in Javascript
 
-### Question 1: What is Closure in Javascript?
+### Question c1: What is Closure in Javascript?
 
 [MDN definition](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures):
 Closures are functions that refer to independent (free) variables (variables that are used locally, but defined in an enclosing scope). In other words, these functions 'remember' the environment in which they were created.
@@ -57,7 +57,7 @@ Closures are functions that refer to independent (free) variables (variables tha
 [Javascript.isSexy](http://javascriptissexy.com/understand-javascript-closures-with-ease/): A closure is an function that has access to the outer (enclosing) function’s variables-scope chain.
 
 
-### Question 2: What will output the following code and why:
+### Question c2: What will output the following code and why:
 
 ```
 function outerFunction() {
@@ -88,7 +88,7 @@ true
 undefined
 ```
 
-### Question 3: Resolving example of problem code
+### Question c3: Resolving example of problem code
 
 What will output these example? 
 
@@ -154,7 +154,7 @@ var nextID = (function() {
 
 ## Bind, apply and call function methods
 
-### Question 1: Write `sum` function
+### Question b1: Write `sum` function
 
 This function must meet conditions:
 
@@ -191,13 +191,13 @@ function sum (fn) {
 
 ## Hoisting
 
-### Question 1: Explain what is hoisting in Javascript
+### Question h1: Explain what is hoisting in Javascript
 
 **Answer**
 
 [W3School](https://www.w3schools.com/js/js_hoisting.asp) Hoisting is JavaScript's default behavior of moving declarations to the top. In JavaScript, a variable can be declared after it has been used. In other words; a variable can be used before it has been declared.
 
-### Question 2: What will output the following code and why:
+### Question h2: What will output the following code and why:
 
 ```
 var a = 1; 
