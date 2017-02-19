@@ -231,6 +231,8 @@ b();
 console.log(a);
 ```
 
+**Answer**
+
 Console will output :
 ```
 1
