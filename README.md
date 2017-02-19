@@ -189,7 +189,7 @@ function sum (fn) {
 ```
 
 
-## Hoisting
+## Hoisting in Javascript
 
 ### Question h1: Explain what is hoisting in Javascript
 
