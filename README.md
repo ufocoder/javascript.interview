@@ -8,7 +8,7 @@ Table of contents:
 
 * [Inheritance in Javascript](#inheritance-in-javascript):
    * [Write `Object.create` polyfill](#question-i1-write-object-create-polyfill)
-   * [What is functional inherence pattern? How to create protected methods and private propreties?](#question-what-is-functional-inherence-pattern-how-to-create-protected-methods-and-private-propreties)
+   * [What is functional inherence pattern? How to create protected methods and private propreties?](#question-i2-what-is-functional-inherence-pattern-how-to-create-protected-methods-and-private-propreties)
    * [What will output the following code](#question-i3-what-will-output-the-following-code-and-why)
 * [Closure in Javascript](#closure-in-javascript):
     * [What is Closure in Javascript?](#question-c1-what-is-closure-in-javascript)
