@@ -15,7 +15,9 @@ Table of contents:
     * [Write `nextID` function](#question-4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
     * [Write `sum` function](#question-1-write-sum-function)
-   
+* [Hoisting in Javascript](#hoisting-in-javascript):
+   * [What will output the following code #1](#question-2-what-will-output-the-following-code-and-why)
+   * [What will output the following code #2](#question-2-what-will-output-the-following-code-and-why)
 
 ## Inheritance in Javascript
 
@@ -184,6 +186,54 @@ function sum (fn) {
       }
   };
 }
+```
+
+
+## Hoisting
+
+### Question 1: Explain what is hoisting in Javascript
+
+**Answer**
+
+[W3School](https://www.w3schools.com/js/js_hoisting.asp) Hoisting is JavaScript's default behavior of moving declarations to the top. In JavaScript, a variable can be declared after it has been used. In other words; a variable can be used before it has been declared.
+
+### Question 2: What will output the following code and why:
+
+```
+var a = 1; 
+function bar() { 
+    if (!a) { 
+        var a = 10; 
+    } 
+    console.log(a); 
+} 
+bar();
+```
+
+**Answer**
+
+Console will output :
+```
+10
+```
+
+
+### Question 3: What will output the following code and why:
+
+```
+var a = 1;
+function b() {
+    a = 10;
+    return;
+    function a() {}
+} 
+b(); 
+console.log(a);
+```
+
+Console will output :
+```
+1
 ```
 
 # Contributing
