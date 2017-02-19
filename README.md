@@ -131,7 +131,7 @@ for (var i=0; i < 10; i++){
 }
 ```
 
-### Question 4: Write `nextID` function that will generate ID incrementally after each calling
+### Question c4: Write `nextID` function that will generate ID incrementally after each calling
 There's an example of function output:
 ```
 nextID(); // output: 1
@@ -218,7 +218,7 @@ Console will output :
 ```
 
 
-### Question 3: What will output the following code and why:
+### Question h3: What will output the following code and why:
 
 ```
 var a = 1;
