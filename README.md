@@ -90,9 +90,10 @@ outerFunction();
 **Answer**
 
 Console will output the followings:
+
 ```
-true
 undefined
+true
 ```
 
 ### Question c3: Resolving example of problem code
