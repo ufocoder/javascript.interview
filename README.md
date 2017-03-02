@@ -25,6 +25,7 @@ Table of contents:
 ## Inheritance in Javascript
 
 ### Question i1: Write `Object.create` polyfill
+For implementing use this [kata](https://www.codewars.com/kata/58b3e68aa68b70accb000614) please.
 
 ### Question i2: What is functional inherence pattern? How to create protected methods and private propreties?
 
