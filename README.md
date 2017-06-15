@@ -21,6 +21,9 @@ Table of contents:
    * [What is a hoisting in Javascript](#question-h1-explain-what-is-hoisting-in-Javascript)
    * [What will output the following code](#question-h2-what-will-output-the-following-code-and-why)
    * [What will output the following code](#question-h3-what-will-output-the-following-code-and-why)
+* [Event Loop](#event-loop)
+   * [How works event loop in the browser Javascript?](#question-el1-how-works-event-loop-in-the-browser-javascript)
+   * [What will output the following code and why](#question-el2-what-will-output-the-following-code-and-why)
 
 ## Inheritance in Javascript
 
