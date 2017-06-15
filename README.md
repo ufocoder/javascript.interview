@@ -247,6 +247,63 @@ Console will output :
 1
 ```
 
+## Event Loop
+
+### Question el1: How works event loop in the browser Javascript?
+
+**Answer**
+
+Event Loop in the browser could be represented as the following code:
+
+```
+while (eventLoop.waitForTask()) {  
+  const taskQueue = eventLoop.selectTaskQueue()
+  if (taskQueue.hasNextTask()) {
+    taskQueue.processNextTask()
+  }
+
+  const microtaskQueue = eventLoop.microTaskQueue
+  while (microtaskQueue.hasNextMicrotask()) {
+    microtaskQueue.processNextMicrotask()
+  }
+
+  if (eventLoop.shouldRender()) {
+    eventLoop.render()
+  }
+}
+```
+
+[Check current presentation](http://slides.com/xufocoder/event-loop-in-the-browser-javascript)
+
+### Question el2: What will output the following code and why:
+
+```
+console.log('script start');
+
+setTimeout(function() {
+  console.log('setTimeout');
+}, 0);
+
+Promise.resolve().then(function() {
+  console.log('promise1');
+}).then(function() {
+  console.log('promise2');
+});
+
+console.log('script end');
+```
+
+**Answer**
+
+Console will output :
+```
+script start
+script end
+promise1
+promise2
+setTimeout
+```
+
 # Contributing
 
 I would be thankful for your [issues](https://github.com/ufocoder/javascript.interview/issues) and [pull requests](https://github.com/ufocoder/javascript.interview/pulls)
