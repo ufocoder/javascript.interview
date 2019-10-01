@@ -250,6 +250,31 @@ Console will output :
 1
 ```
 
+### Question h4: What will be the output of the following code and why?:
+
+```
+try {
+  console.log(a);
+} catch(e) {
+  try {
+    a = 10;
+    console.log(a);
+  } catch (e) {
+    console.log("bar");
+  }
+}
+let a = 1;
+```
+
+**Answer**
+
+Console will output :
+```
+bar
+```
+Reason :
+Since `let` is uninitialized at any time until being declared (unlike `var` which is always initialized but with value `undefined`), the first attempt to `console.log(a)` will raise an error which will be caught by the catch block. Then, inside that catch block, there's `a = 10` inside a try block again. This will also raise an error because there's still no variable named `a` so the catch block will catch the error once again so the output will be `bar`.
+
 ## Event Loop
 
 ### Question el1: How works event loop in the browser Javascript?
