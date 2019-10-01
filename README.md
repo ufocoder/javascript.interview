@@ -249,6 +249,29 @@ Console will output :
 ```
 1
 ```
+### Question h4: What will output the following code and why:
+
+```
+function test() { 
+    foo(); 
+    bar();
+    function foo() { 
+        console.log('foo'); 
+    }
+    var bar = function() { 
+        console.log('bar'); 
+    } 
+} 
+test(); 
+```
+
+**Answer**
+
+Console will output :
+```
+foo
+TypeError: bar is not a function
+```
 
 ## Event Loop
 
