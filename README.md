@@ -164,6 +164,35 @@ var nextID = (function() {
 ```
 
 
+### Questions c5. Given the following closure, write `thingToAdd` that will add two integers. Identify whether or not this is a currying funtion, and explain whether or not a currying function has any _closures_.
+
+```js
+const addTwoThings = thingToAdd(2);
+addTwoThings(3); // -> 5
+
+const addTwoThings = thingToAdd(10);
+addTwoThings(30); // -> 40
+```
+
+**Answer**
+
+Currying functions consist of chaining closures that return inner functions. So in the case of `thingToAdd` you will have two separate closures that each return a single value that gets evaluated sequentially.
+
+#### Example implementation using ES6
+```js
+const thingToAdd = (a) => (b) => a + b;
+```
+
+#### Example implementation showing Closures
+```js
+let thingToAdd = function (a) {
+    return function (b) {
+        return a + b
+    }
+}
+```
+
+
 ## Bind, apply and call function methods
 
 ### Question b1: Write `sum` function
@@ -199,7 +228,6 @@ function sum (fn) {
   };
 }
 ```
-
 
 ## Hoisting in Javascript
 
