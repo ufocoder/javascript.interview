@@ -15,6 +15,7 @@ Table of contents:
     * [What will output the following code](#question-c2-what-will-output-the-following-code-and-why)
     * [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
     * [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
+    * [Does any currying function have a closure?](#questions-c5-given-the-following-closure-write-thingtoadd-that-will-add-two-integers-identify-whether-or-not-this-is-a-currying-funtion-and-explain-whether-or-not-a-currying-function-has-any-closures)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
     * [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in Javascript](#hoisting-in-javascript):
