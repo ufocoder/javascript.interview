@@ -15,6 +15,7 @@ Table of contents:
     * [What will output the following code](#question-c2-what-will-output-the-following-code-and-why)
     * [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
     * [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
+    * [Does any currying function have a closure?](#questions-c5-does-any-currying-function-have-a-closure-give-an-example-please)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
     * [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in Javascript](#hoisting-in-javascript):
@@ -167,6 +168,34 @@ var nextID = (function() {
 })();
 ```
 
+### Questions c5. Does any currying function have a closure? Give an example, please.
+
+**Example**
+```
+const addTwoThings = thingToAdd(2);
+addTwoThings(3); // -> 5
+
+const addTwoThings = thingToAdd(10);
+addTwoThings(30); // -> 40
+```
+
+**Answer**
+
+Currying functions consist of chaining closures that return inner functions. So in the case of `thingToAdd` you will have two separate closures that each return a single value that gets evaluated sequentially.
+
+#### Example implementation using ES6
+```
+const thingToAdd = (a) => (b) => a + b;
+```
+
+#### Example implementation showing Closures
+```
+let thingToAdd = function (a) {
+    return function (b) {
+        return a + b
+    }
+}
+```
 
 ## Bind, apply and call function methods
 
@@ -203,7 +232,6 @@ function sum (fn) {
   };
 }
 ```
-
 
 ## Hoisting in Javascript
 
