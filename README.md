@@ -15,7 +15,7 @@ Table of contents:
     * [What will output the following code](#question-c2-what-will-output-the-following-code-and-why)
     * [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
     * [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
-    * [Does any currying function have a closure?](#questions-c5-given-the-following-closure-write-thingtoadd-that-will-add-two-integers-identify-whether-or-not-this-is-a-currying-funtion-and-explain-whether-or-not-a-currying-function-has-any-closures)
+    * [Does any currying function have a closure?](#questions-c5-does-any-currying-function-have-a-closure-give-an-example-please)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
     * [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in Javascript](#hoisting-in-javascript):
@@ -164,8 +164,9 @@ var nextID = (function() {
 })();
 ```
 
-### Questions c5. Given the following closure, write `thingToAdd` that will add two integers. Identify whether or not this is a currying function, and explain whether or not a currying function has any _closures_.
+### Questions c5. Does any currying function have a closure? Give an example, please.
 
+**Example**
 ```
 const addTwoThings = thingToAdd(2);
 addTwoThings(3); // -> 5
