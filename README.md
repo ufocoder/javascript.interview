@@ -7,20 +7,19 @@ It will helps you to compose question list for your own interview or prepare to 
 Table of contents:
 
 * [Inheritance in JavaScript](#inheritance-in-javascript):
+    * Theory:
+      - [What is functional inheritance pattern? How to create protected methods and private properties?](#question-i1-what-is-functional-inheritance-pattern-how-to-create-protected-methods-and-private-properties)
     * Practice:
-      - [Write `Object.create` polyfill](#question-i1-write-objectcreate-polyfill)
-      - [What will output the following code and why?](#question-i2-what-will-output-the-following-code-and-why)
-    * Theory & Practice:
-      - [What is functional inheritance pattern? How to create protected methods and private properties?](#question-i3-what-is-functional-inheritance-pattern-how-to-create-protected-methods-and-private-properties)
+      - [Write `Object.create` polyfill](#question-i2-write-objectcreate-polyfill)
+      - [What will output the following code and why?](#question-i3-what-will-output-the-following-code-and-why)
 * [Closure in JavaScript](#closure-in-javascript):
     * Theory:
       - [What is Closure in JavaScript?](#question-c1-what-is-closure-in-javascript)
+      - [Does any currying function have a closure?](#questions-c2-does-any-currying-function-have-a-closure-give-an-example-please)
     * Practice:
-      - [What will output the following code and why?](#question-c2-what-will-output-the-following-code-and-why)
-      - [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
-      - [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
-    * Theory & Practice:
-      - [Does any currying function have a closure?](#questions-c5-does-any-currying-function-have-a-closure-give-an-example-please)
+      - [What will output the following code and why?](#question-c3-what-will-output-the-following-code-and-why)
+      - [Resolving example of problem code](#question-c4-resolving-example-of-problem-code)
+      - [Write `nextID` function](#question-c5-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
     * Practice:
       - [Write `sum` function](#question-b1-write-sum-function)
@@ -43,12 +42,16 @@ Table of contents:
 
 ## Inheritance in JavaScript
 
+### **Theory**
+
+### Question i1: What is functional inheritance pattern? How to create protected methods and private properties?
+
 ### **Practice**
 
-### Question i1: Write `Object.create` polyfill
+### Question i2: Write `Object.create` polyfill
 For implementing use this [kata](https://www.codewars.com/kata/58b3e68aa68b70accb000614) please.
 
-### Question i2: What will output the following code and why?
+### Question i3: What will output the following code and why?
 
 ```js
 var baseObject = {
@@ -76,8 +79,6 @@ Other value
 Base value
 ```
 
-### Question i3: What is functional inheritance pattern? How to create protected methods and private properties?
-
 ## Closure in JavaScript
 
 ### **Theory**
@@ -89,9 +90,41 @@ Closures are functions that refer to independent (free) variables (variables tha
 
 [JavaScript.isSexy](http://javascriptissexy.com/understand-javascript-closures-with-ease/): A closure is an function that has access to the outer (enclosing) function’s variables-scope chain.
 
+### Questions c2. Does any currying function have a closure? Give an example, please.
+
+**Example**
+
+```js
+const addTwoThings = thingToAdd(2);
+addTwoThings(3); // -> 5
+
+const addTwoThings = thingToAdd(10);
+addTwoThings(30); // -> 40
+```
+
+**Answer**
+
+Currying functions consist of chaining closures that return inner functions. So in the case of `thingToAdd` you will have two separate closures that each return a single value that gets evaluated sequentially.
+
+#### Example implementation using ES6
+
+```js
+const thingToAdd = (a) => (b) => a + b;
+```
+
+#### Example implementation showing Closures
+
+```js
+let thingToAdd = function (a) {
+    return function (b) {
+        return a + b;
+    }
+}
+```
+
 ### **Practice**
 
-### Question c2: What will output the following code and why?
+### Question c3: What will output the following code and why?
 
 ```js
 function outerFunction() {
@@ -123,7 +156,7 @@ undefined
 true
 ```
 
-### Question c3: Resolving example of problem code
+### Question c4: Resolving example of problem code
 
 What will output these example? 
 
@@ -169,7 +202,7 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-### Question c4: Write `nextID` function that will generate ID incrementally after each calling
+### Question c5: Write `nextID` function that will generate ID incrementally after each calling
 
 There's an example of function output:
 
@@ -192,39 +225,6 @@ var nextID = (function() {
 })();
 ```
 
-### **Theory & Practice**
-
-### Questions c5. Does any currying function have a closure? Give an example, please.
-
-**Example**
-
-```js
-const addTwoThings = thingToAdd(2);
-addTwoThings(3); // -> 5
-
-const addTwoThings = thingToAdd(10);
-addTwoThings(30); // -> 40
-```
-
-**Answer**
-
-Currying functions consist of chaining closures that return inner functions. So in the case of `thingToAdd` you will have two separate closures that each return a single value that gets evaluated sequentially.
-
-#### Example implementation using ES6
-
-```js
-const thingToAdd = (a) => (b) => a + b;
-```
-
-#### Example implementation showing Closures
-
-```js
-let thingToAdd = function (a) {
-    return function (b) {
-        return a + b;
-    }
-}
-```
 
 ## Bind, apply and call function methods
 
