@@ -7,37 +7,48 @@ It will helps you to compose question list for your own interview or prepare to 
 Table of contents:
 
 * [Inheritance in JavaScript](#inheritance-in-javascript):
-   * [Write `Object.create` polyfill](#question-i1-write-objectcreate-polyfill)
-   * [What is functional inherence pattern? How to create protected methods and private properties?](#question-i2-what-is-functional-inherence-pattern-how-to-create-protected-methods-and-private-properties)
-   * [What will output the following code and why?](#question-i3-what-will-output-the-following-code-and-why)
+    * Practice:
+      - [Write `Object.create` polyfill](#question-i1-write-objectcreate-polyfill)
+      - [What will output the following code and why?](#question-i2-what-will-output-the-following-code-and-why)
+    * Theory & Practice:
+      - [What is functional inheritance pattern? How to create protected methods and private properties?](#question-i3-what-is-functional-inheritance-pattern-how-to-create-protected-methods-and-private-properties)
 * [Closure in JavaScript](#closure-in-javascript):
-    * [What is Closure in JavaScript?](#question-c1-what-is-closure-in-javascript)
-    * [What will output the following code and why?](#question-c2-what-will-output-the-following-code-and-why)
-    * [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
-    * [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
-    * [Does any currying function have a closure?](#questions-c5-does-any-currying-function-have-a-closure-give-an-example-please)
+    * Theory:
+      - [What is Closure in JavaScript?](#question-c1-what-is-closure-in-javascript)
+    * Practice:
+      - [What will output the following code and why?](#question-c2-what-will-output-the-following-code-and-why)
+      - [Resolving example of problem code](#question-c3-resolving-example-of-problem-code)
+      - [Write `nextID` function](#question-c4-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
+    * Theory & Practice:
+      - [Does any currying function have a closure?](#questions-c5-does-any-currying-function-have-a-closure-give-an-example-please)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
-    * [Write `sum` function](#question-b1-write-sum-function)
+    * Practice:
+      - [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in JavaScript](#hoisting-in-javascript):
-   * [What is a hoisting in JavaScript](#question-h1-explain-what-is-hoisting-in-JavaScript)
-   * [What will output the following code and why?](#question-h2-what-will-output-the-following-code-and-why)
-   * [What will output the following code and why?](#question-h3-what-will-output-the-following-code-and-why)
-   * [What will output the following code and why?](#question-h4-what-will-output-the-following-code-and-why)
+    * Theory:
+      - [What is a hoisting in JavaScript](#question-h1-explain-what-is-hoisting-in-JavaScript)
+    * Practice:
+      - [What will output the following code and why?](#question-h2-what-will-output-the-following-code-and-why)
+      - [What will output the following code and why?](#question-h3-what-will-output-the-following-code-and-why)
+      - [What will output the following code and why?](#question-h4-what-will-output-the-following-code-and-why)
 * [Event Loop](#event-loop)
-   * [How works event loop in the browser JavaScript?](#question-el1-how-works-event-loop-in-the-browser-javascript)
-   * [What will output the following code and why?](#question-el2-what-will-output-the-following-code-and-why)
+    * Theory:
+      - [How works event loop in the browser JavaScript?](#question-el1-how-works-event-loop-in-the-browser-javascript)
+    * Practice:
+      - [What will output the following code and why?](#question-el2-what-will-output-the-following-code-and-why)
 * [Scope in JavaScript](#scope-in-javascript)
-   * [What will output the following code and why?](#question-s1-what-will-be-the-output-of-the-following-code-and-why)
+    * Practice:
+      - [What will output the following code and why?](#question-s1-what-will-be-the-output-of-the-following-code-and-why)
 
 
 ## Inheritance in JavaScript
 
+### **Practice**
+
 ### Question i1: Write `Object.create` polyfill
 For implementing use this [kata](https://www.codewars.com/kata/58b3e68aa68b70accb000614) please.
 
-### Question i2: What is functional inheritance pattern? How to create protected methods and private properties?
-
-### Question i3: What will output the following code and why?
+### Question i2: What will output the following code and why?
 
 ```js
 var baseObject = {
@@ -65,7 +76,11 @@ Other value
 Base value
 ```
 
+### Question i3: What is functional inheritance pattern? How to create protected methods and private properties?
+
 ## Closure in JavaScript
+
+### **Theory**
 
 ### Question c1: What is Closure in JavaScript?
 
@@ -73,6 +88,8 @@ Base value
 Closures are functions that refer to independent (free) variables (variables that are used locally, but defined in an enclosing scope). In other words, these functions 'remember' the environment in which they were created.
 
 [JavaScript.isSexy](http://javascriptissexy.com/understand-javascript-closures-with-ease/): A closure is an function that has access to the outer (enclosing) function’s variables-scope chain.
+
+### **Practice**
 
 ### Question c2: What will output the following code and why?
 
@@ -175,6 +192,8 @@ var nextID = (function() {
 })();
 ```
 
+### **Theory & Practice**
+
 ### Questions c5. Does any currying function have a closure? Give an example, please.
 
 **Example**
@@ -208,6 +227,8 @@ let thingToAdd = function (a) {
 ```
 
 ## Bind, apply and call function methods
+
+### **Practice**
 
 ### Question b1: Write `sum` function
 
@@ -245,11 +266,15 @@ function sum (fn) {
 
 ## Hoisting in JavaScript
 
+### **Theory**
+
 ### Question h1: Explain what is hoisting in JavaScript
 
 **Answer**
 
 [W3School](https://www.w3schools.com/js/js_hoisting.asp) Hoisting is JavaScript's default behavior of moving declarations to the top. In JavaScript, a variable can be declared after it has been used. In other words; a variable can be used before it has been declared.
+
+### **Practice**
 
 ### Question h2: What will output the following code and why?
 
@@ -319,6 +344,8 @@ TypeError: bar is not a function
 
 ## Event Loop
 
+### **Theory**
+
 ### Question el1: How works event loop in the browser JavaScript?
 
 **Answer**
@@ -344,6 +371,8 @@ while (eventLoop.waitForTask()) {
 ```
 
 [Check current presentation](http://slides.com/xufocoder/event-loop-in-the-browser-javascript)
+
+### **Practice**
 
 ### Question el2: What will output the following code and why?
 
@@ -376,6 +405,8 @@ setTimeout
 ```
 
 ## Scope in JavaScript
+
+### **Practice**
 
 ### Question s1: What will be the output of the following code and why?
 
