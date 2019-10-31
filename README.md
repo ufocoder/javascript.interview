@@ -7,37 +7,38 @@ It will helps you to compose question list for your own interview or prepare to 
 Table of contents:
 
 * [Inheritance in JavaScript](#inheritance-in-javascript):
-    * Theory:
+    * [Theory](#theory):
       - [What is functional inheritance pattern? How to create protected methods and private properties?](#question-i1-what-is-functional-inheritance-pattern-how-to-create-protected-methods-and-private-properties)
-    * Practice:
+    * [Practice](#practice):
       - [Write `Object.create` polyfill](#question-i2-write-objectcreate-polyfill)
       - [What will output the following code and why?](#question-i3-what-will-output-the-following-code-and-why)
 * [Closure in JavaScript](#closure-in-javascript):
-    * Theory:
+    * [Theory](#theory-1):
       - [What is Closure in JavaScript?](#question-c1-what-is-closure-in-javascript)
       - [Does any currying function have a closure?](#questions-c2-does-any-currying-function-have-a-closure-give-an-example-please)
-    * Practice:
+    * [Practice](#practice-1):
       - [What will output the following code and why?](#question-c3-what-will-output-the-following-code-and-why)
       - [Resolving example of problem code](#question-c4-resolving-example-of-problem-code)
       - [Write `nextID` function](#question-c5-write-nextid-function-that-will-generate-id-incrementally-after-each-calling)
 * [Bind, apply and call function methods](#bind-apply-and-call-function-methods) 
-    * Practice:
+    * [Practice](#practice-2):
       - [Write `sum` function](#question-b1-write-sum-function)
 * [Hoisting in JavaScript](#hoisting-in-javascript):
-    * Theory:
+    * [Theory](#theory-2):
       - [What is a hoisting in JavaScript](#question-h1-explain-what-is-hoisting-in-JavaScript)
-    * Practice:
+    * [Practice](#practice-3):
       - [What will output the following code and why?](#question-h2-what-will-output-the-following-code-and-why)
       - [What will output the following code and why?](#question-h3-what-will-output-the-following-code-and-why)
       - [What will output the following code and why?](#question-h4-what-will-output-the-following-code-and-why)
 * [Event Loop](#event-loop)
-    * Theory:
+    * [Theory](#theory-3):
       - [How works event loop in the browser JavaScript?](#question-el1-how-works-event-loop-in-the-browser-javascript)
-    * Practice:
+    * [Practice](#practice-4):
       - [What will output the following code and why?](#question-el2-what-will-output-the-following-code-and-why)
 * [Scope in JavaScript](#scope-in-javascript)
-    * Practice:
+    * [Practice](#practice-5):
       - [What will output the following code and why?](#question-s1-what-will-be-the-output-of-the-following-code-and-why)
+
 
 
 ## Inheritance in JavaScript
