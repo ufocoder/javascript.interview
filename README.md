@@ -6,7 +6,7 @@ It will helps you to compose question list for your own interview or prepare to 
 
 Table of contents:
 
-* [Inheritance in JavaScript](#inheritance-in-javaScript):
+* [Inheritance in JavaScript](#inheritance-in-javascript):
     * [Theory](#theory):
       - [What is functional inheritance pattern? How to create protected methods and private properties?](#question-i1-what-is-functional-inheritance-pattern-how-to-create-protected-methods-and-private-properties)
     * [Practice](#practice):
