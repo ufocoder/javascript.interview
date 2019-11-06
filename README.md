@@ -2,7 +2,7 @@ JavaScript Interview
 ====================
 
 This documents contains the most actual and important questions for JavaScript developer position. 
-It will helps you to compose question list for your own interview or prepare to interview.
+It will help you to compose question list for your own interview or prepare to interview.
 
 Table of contents:
 
