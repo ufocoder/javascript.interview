@@ -38,8 +38,9 @@ Table of contents:
 * [Scope in JavaScript](#scope-in-javascript)
     * [Practice](#practice-5):
       - [What will output the following code and why?](#question-s1-what-will-be-the-output-of-the-following-code-and-why)
-
-
+* [Booleans in JavaScript](#booleans-in-javascript)
+    * [Theory](#theory-4):
+      - [What are JavaScripts' falsy values?](#question-b1-how-many-falsy-values-does-javascript-have-name-all-of-them)
 
 ## Inheritance in JavaScript
 
@@ -436,6 +437,21 @@ bar
 Reason:
 
 Since `let` is uninitialized at any time until being declared (unlike `var` which is always initialized but with value `undefined`), the first attempt to `console.log(a)` will raise an error which will be caught by the catch block. Then, inside that catch block, there's `a = 10` inside a try block again. This will also raise an error because there's still no variable named `a` so the catch block will catch the error once again so the output will be `bar`.
+
+## Booleans in JavaScript
+### **Theory**
+
+### Question b1: How many falsy values does JavaScript have? Name all of them
+
+**Answer**
+JavaScript has the following `7` falsy values:
+- `0` (integer)
+- `0n` (BigInt)
+- `null`
+- `undefined`
+- `false`
+- `NaN`
+- `""`, `''` or `` (empty string)
 
 ## Contributing
 
