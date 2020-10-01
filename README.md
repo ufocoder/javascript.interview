@@ -378,7 +378,7 @@ while (eventLoop.waitForTask()) {
 
 **Answer**
 
-A Promise is essentially an object that can produce a single value at some time in the future, either a value or the reason why it could not be resolved.  Developers can then attach callbacks to these objects to execute code once the value resolved by the Promise is available.
+A Promise is essentially an object that can produce a single value at some time in the future, either a value or the reason why it could not be resolved.  Developers can then attach callbacks to these objects to execute code once the value resolved by the Promise is available.  Promises are also known as microtasks of event loops.  This means it is basically a task that is queued to be recalled during the event loop.  Promises can also be chained, meaning they can be attached to other Promises. Each attached Promise, or "child" Promise, would therefore have a "parent" Promise, that has to be resolved before the child can execute.     
 
 ### **Practice**
 
